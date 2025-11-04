@@ -39,12 +39,12 @@ public class BankAccount implements Valuable{
         this.balance = balance;
     }
 
-    public double deposit(double amount){
-        return this.getBalance() + amount;
+    public void deposit(double amount){
+        setBalance(balance + amount);
     }
 
-    public double withdraw(double amount){
-        return this.getBalance() - amount;
+    public void withdraw(double amount){
+        setBalance(balance - amount);
     }
 
     @Override

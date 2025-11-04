@@ -39,12 +39,12 @@ public class CreditCard implements Valuable{
         this.balance = balance;
     }
 
-    public double charge (double amount) {
-        return this.getBalance() - amount;
+    public void charge (double amount) {
+        setBalance(balance - amount);
     }
 
-    public double payment (double amount) {
-        return this.getBalance() + amount;
+    public void payment (double amount) {
+        setBalance(balance + amount);
     }
 
     @Override
